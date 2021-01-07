@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of the web-page -->
+    <title>Home | Ninja Studio</title>
+    <!-- external css file linking -->
+    <!-- primary css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- secondary/responsive css file -->
+    <link rel="stylesheet" href="indexPage-responsive.css">
+    <!-- font awesome cdn linking -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- header of the music player -->
+    <div class="header">
+        <!-- logo and title container of the site -->
+        <div class="logo-title-container">
+            <!-- logo container -->
+            <div class="logo">
+                <!-- headphone icon -->
+                <i id="headphone" class="fas fa-headphones-alt"></i>
+            </div>
+            <!-- site-title container -->
+            <div class="site-title">
+                <!-- site title names -->
+                <h3>Ninja</h3>
+                <h1>Studio</h1>
+            </div>
+        </div>
+
+        <!-- fav text part of the site -->
+        <div class="text-fav">Favourites</div>
+
+        <!-- navigation section which contains search bar, 
+            notification icon and avtaar icon - for lg,md,sm device-->
+        <nav class="for-large-device">
+            <ul>
+                <li>
+                    <!-- Navbar  search bar container -->
+                    <div class="nav-search-container">
+                        <div>
+                            <!-- search icon -->
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <!-- input for search bar -->
+                        <input type="text" name="" id="" placeholder="Search">
+                        <div>
+                            <!-- mic icon -->
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- navbar notification container -->
+                    <div class="nav-notification-container">
+                        <!-- bell icon -->
+                        <i class="fas fa-bell notification-icon"></i>
+                    </div>
+                </li>
+                <li>
+                    <!-- navbar avtaar container -->
+                    <div class="nav-avtaar-container">
+                        <!-- user icon -->
+                        <i class="fas fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- only for less than 576px (xs) -->
+        <!-- humburger-icon -->
+        <a class="humburger-icon only-mobile" href="#nav-only-mobile">
+            <!-- <div class="humburger-icon only-mobile"> -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <!-- </div> -->
+        </a>
+
+        <nav id="nav-only-mobile">
+            <a class="nav-slider-closer" href="#">X</a>
+            <ul>
+                <li>
+                    <!-- navbar notification container -->
+                    <div class="nav-notification-container">
+                        Notification
+                        <!-- bell icon -->
+                        <i class="fas fa-bell notification-icon"></i>
+                    </div>
+                </li>
+                <li>
+                    <!-- navbar avtaar container -->
+                    <div class="nav-avtaar-container">
+                        User
+                        <!-- user icon -->
+                        <i class="fas fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- search bar - only mobile -->
+    <div class="search-bar-for-mobile only-mobile">
+        <div class="search-bar-container-for-mobile">
+            <div>
+                <!-- search icon -->
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- input for search bar -->
+            <input type="text" name="" id="" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- main container of the site -->
+    <main id="main-content-container">
+        <!-- main container of the content of the music player -->
+        <div id="main-container">
+            <!-- carousal container -->
+            <div id="carousal-container" class="mb-75px">
+                <!-- carousal images div :- 3 -->
+                <div>
+                    <img src="./images/carousels/img2.jpg" alt="Party Song Image">
+                </div>
+                <div>
+                    <img src="./images/carousels/img4.jpg" alt="DJ Song Image">
+                </div>
+                <div>
+                    <img src="./images/carousels/img3.jpg" alt="Pop Song Image">
+                </div>
+            </div>
+
+            <!-- latest release section -->
+            <div id="latest-release-section" class="mb-75px ml-">
+                <!-- latest-release haeding -->
+                <h3 class="site-sub-headings">
+                    Latest Release
+                </h3>
+                <!-- latest release container/content -->
+                <div class="latest-release-container">
+                    <!-- latest release card  -->
+                    <div class="latest-release-card">
+                        <!-- song image & play icon div -->
+                        <div class="latest-release-song-img">
+                            <!-- play icon -->
+                            <i class="fas fa-play"></i>
+                            <!-- song image -->
+                            <img src="./images/latest-release/lr.jpg" alt="Song Image">
+                        </div>
+                        <!-- song name & release date -->
+                        <div class="latest-release-song-name-and-date font-size-only-for-mobile c-white">
+                            <p>Faded</p>
+                            <p>Nov 23,2020</p>
+                        </div>
+                        <!-- song length and other options -->
+                        <div class="latest-release-song-others-details font-size-only-for-mobile c-white">
+                            <!-- 3 dots container/other options -->
+                            <div class="dots-container">
+                                <!-- each dot *3-->
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <!-- song length -->
+                            <p class="latest-song-length">4.44</p>
+                        </div>
+                    </div>
+
+                    <!-- latest release card  -->
+                    <div class="latest-release-card">
+                        <!-- song image & play icon div -->
+                        <div class="latest-release-song-img">
+                            <!-- play icon -->
+                            <i class="fas fa-play"></i>
+                            <!-- song image -->
+                            <img src="./images/latest-release/lr.jpg" alt="Song Image">
+                        </div>
+                        <!-- song name & release date -->
+                        <div class="latest-release-song-name-and-date font-size-only-for-mobile c-white">
+                            <p>Faded</p>
+                            <p>Nov 23,2020</p>
+                        </div>
+                        <!-- song length and other options -->
+                        <div class="latest-release-song-others-details font-size-only-for-mobile c-white">
+                            <!-- 3 dots container/other options -->
+                            <div class="dots-container">
+                                <!-- each dot *3-->
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <!-- song length -->
+                            <p class="latest-song-length">4.44</p>
+                        </div>
+                    </div><!-- latest release card  -->
+                    <div class="latest-release-card">
+                        <!-- song image & play icon div -->
+                        <div class="latest-release-song-img">
+                            <!-- play icon -->
+                            <i class="fas fa-play"></i>
+                            <!-- song image -->
+                            <img src="./images/latest-release/lr.jpg" alt="Song Image">
+                        </div>
+                        <!-- song name & release date -->
+                        <div class="latest-release-song-name-and-date font-size-only-for-mobile c-white">
+                            <p>Faded</p>
+                            <p>Nov 23,2020</p>
+                        </div>
+                        <!-- song length and other options -->
+                        <div class="latest-release-song-others-details font-size-only-for-mobile c-white">
+                            <!-- 3 dots container/other options -->
+                            <div class="dots-container">
+                                <!-- each dot *3-->
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <!-- song length -->
+                            <p class="latest-song-length">4.44</p>
+                        </div>
+                    </div><!-- latest release card  -->
+                    <div class="latest-release-card">
+                        <!-- song image & play icon div -->
+                        <div class="latest-release-song-img">
+                            <!-- play icon -->
+                            <i class="fas fa-play"></i>
+                            <!-- song image -->
+                            <img src="./images/latest-release/lr.jpg" alt="Song Image">
+                        </div>
+                        <!-- song name & release date -->
+                        <div class="latest-release-song-name-and-date font-size-only-for-mobile c-white">
+                            <p>Faded</p>
+                            <p>Nov 23,2020</p>
+                        </div>
+                        <!-- song length and other options -->
+                        <div class="latest-release-song-others-details font-size-only-for-mobile c-white">
+                            <!-- 3 dots container/other options -->
+                            <div class="dots-container">
+                                <!-- each dot *3-->
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <!-- song length -->
+                            <p class="latest-song-length">4.44</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- popular artists section -->
+            <div id="popular-artists-section" class="mb-75px">
+                <!-- popular artists heading  -->
+                <h3 class="site-sub-headings">
+                    Popular Artists
+                </h3>
+
+                <!-- popular artists container -->
+                <div class="popular-artists-container">
+                    <!-- popular artists card -->
+                    <div class="popular-artists-card">
+                        <!-- artist img and name -->
+                        <figure>
+                            <a href="artist-playlist.html">
+                                <!-- artist image -->
+                                <img src="./images/artists/ed-shareen.jpg" alt="Ed Shareen Image">
+                                <!-- artist name -->
+                                <figcaption class="font-size-only-for-mobile">Ed Shareen</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <!-- popular artists card -->
+                    <div class="popular-artists-card">
+                        <!-- artist img and name -->
+                        <figure>
+                            <a href="artist-playlist.html">
+                                <!-- artist image -->
+                                <img src="./images/artists/coldplay.jpg" alt="ColdPlay Image">
+                                <!-- artist name -->
+                                <figcaption class="font-size-only-for-mobile">ColdPlay</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <!-- popular artists card -->
+                    <div class="popular-artists-card">
+                        <!-- artist img and name -->
+                        <figure>
+                            <a href="artist-playlist.html">
+                                <!-- artist image -->
+                                <img src="./images/artists/zayn.jpg" alt="Zyan Image">
+                                <!-- artist name -->
+                                <figcaption class="font-size-only-for-mobile">Zyan</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <!-- popular artists card -->
+                    <div class="popular-artists-card">
+                        <!-- artist img and name -->
+                        <figure>
+                            <a href="artist-playlist.html">
+                                <!-- artist image -->
+                                <img src="./images/artists/charlie-puth.jpg" alt="Charlie Puth Image">
+                                <!-- artist name -->
+                                <figcaption class="font-size-only-for-mobile">Charlie Puth</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <!-- popular artists card -->
+                    <div class="popular-artists-card">
+                        <!-- artist img and name -->
+                        <figure>
+                            <a href="artist-playlist.html">
+                                <!-- artist image -->
+                                <img src="./images/artists/imagine-dragons.jpg" alt="Imagine Dragon Image">
+                                <!-- artist name -->
+                                <figcaption class="font-size-only-for-mobile">Imagine Dragon</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <!-- popular artists card -->
+                    <div class="popular-artists-card">
+                        <!-- artist img and name -->
+                        <figure>
+                            <a href="artist-playlist.html">
+                                <!-- artist image -->
+                                <img src="./images/artists/bruno_mars.jpg" alt="Bruno Mars Image">
+                                <!-- artist name -->
+                                <figcaption class="font-size-only-for-mobile">Bruno Mars</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- different stations container -->
+            <div id="diff-stations-container" class="mb-75px">
+                <!-- stations design part and logo -->
+                <div id="stations-design-section">
+                    <!-- empty div for design -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <!-- logo -->
+                    <div class="logo-stations">
+                        <!-- headphone icon -->
+                        <i class="fas fa-headphones-alt"></i>
+                        <!-- station title -->
+                        <p>Stations</p>
+                    </div>
+                </div>
+                <!-- stations name and logo container -->
+                <div class="stations-logo-and-name-container">
+                    <!-- stations logo and name card -->
+                    <div class="stations-logo-and-name-card">
+                        <!-- station logo -->
+                        <img src="./images/stations/love.jpg" alt="playlist station image">
+                        <!-- station name -->
+                        <p class="font-size-only-for-mobile">Love</p>
+                    </div>
+                    <!-- stations logo and name card -->
+                    <div class="stations-logo-and-name-card">
+                        <!-- station logo -->
+                        <img src="./images/stations/retro.jpg" alt="playlist station image">
+                        <!-- station name -->
+                        <p class="font-size-only-for-mobile">Retro</p>
+                    </div>
+                    <!-- stations logo and name card -->
+                    <div class="stations-logo-and-name-card">
+                        <!-- station logo -->
+                        <img src="./images/stations/chill.jpg" alt="playlist station image">
+                        <!-- station name -->
+                        <p class="font-size-only-for-mobile">Chill</p>
+                    </div>
+                    <!-- stations logo and name card -->
+                    <div class="stations-logo-and-name-card">
+                        <!-- station logo -->
+                        <img src="./images/stations/workout3.jpg" alt="playlist station image">
+                        <!-- station name -->
+                        <p class="font-size-only-for-mobile">Workout</p>
+                    </div>
+                    <!-- stations logo and name card -->
+                    <div class="stations-logo-and-name-card">
+                        <!-- station logo -->
+                        <img src="./images/stations/rock.jpg" alt="playlist station image">
+                        <!-- station name -->
+                        <p class="font-size-only-for-mobile">Rock</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- different category container -->
+            <div id="different-category-container" class="mb-75px">
+                <!-- category items/card -->
+                <div class="category-items">
+                    <!-- image div -->
+                    <div>
+                        <!-- image -->
+                        <img src="./images/category/party.jpg" alt="">
+                    </div>
+                    <!-- title -->
+                    <p class="font-size-only-for-mobile">Party</p>
+                </div>
+                <!-- category items/card -->
+                <div class="category-items">
+                    <!-- image div -->
+                    <div>
+                        <!-- image -->
+                        <img src="./images/category/electronic.jpg" alt="">
+                    </div>
+                    <!-- title -->
+                    <p class="font-size-only-for-mobile">Electronic</p>
+                </div>
+                <!-- category items/card -->
+                <div class="category-items">
+                    <!-- image div -->
+                    <div>
+                        <!-- image -->
+                        <img src="./images/category/road-trip.jpg" alt="">
+                    </div>
+                    <!-- title -->
+                    <p class="font-size-only-for-mobile">Road Trip</p>
+                </div>
+            </div>
+
+            <!-- latest english song section -->
+            <div id="latest-english-section" class="mb-75px">
+                <!-- title -->
+                <h3 class="site-sub-headings">
+                    Latest English
+                </h3>
+                <!-- latest english song container -->
+                <div class="latest-song-container">
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/english/song1.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Believer</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/english/song2_2.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Shape of You</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/english/song3.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Dusk Till Dawn</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/english/song4_2.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Closer</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/english/song5.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Without You</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- latest hindi song section -->
+            <div id="latest-hindi-section" class="mb-115px">
+                <!-- latest hindi song title -->
+                <h3 class="site-sub-headings">
+                    Latest Hindi
+                </h3>
+                <!-- latest hindi song container -->
+                <div class="latest-song-container">
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/hindi/s1.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Bekhayali</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/hindi/s2.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Chidiya</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/hindi/s3.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Ve Mahi</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/hindi/s4.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Lamberghini</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                    <!-- song card -->
+                    <div class="song-card">
+                        <div>
+                            <a href="#">
+                                <!-- song image -->
+                                <img src="./images/songs/hindi/s5.jpg" alt="song-image">
+                            </a>
+                            <!-- song name -->
+                            <span class="font-size-only-for-mobile">Laal Bindi</span>
+                            <!-- song release date -->
+                            <span class="font-size-only-for-mobile">Nov 26,2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- aside playlist -->
+        <aside id="playlists">
+            <!-- plylist title -->
+            <h1 class="site-sub-headings aside-title">
+                My Playlists
+            </h1>
+            <!-- sidebar closing icon -->
+            <div class="close-sidebar"> <a href="#"><i class="fas fa-times"></i></a></div>
+
+            <!-- aside playlist queue dropdown -->
+            <div class="aside-playlists-dropdown-options-container only-for-desktop">
+                <!-- dropdown container -->
+                <div class="aside-playlists-dropdown-heading">
+                    <!-- title -->
+                    <a href="#aside-dropdown-options">
+                        <span>Queue</span>
+                        <!-- dropdown icon -->
+                        <i class="fas fa-angle-down dropdown-icon"></i>
+                    </a>
+                </div>
+                <!-- aside playlist dropdown option -->
+                <div class="aside-playlists-dropdown-options" id="aside-dropdown-options">
+                    <!-- option item -->
+                    <p>Playlists</p>
+                    <!-- horizontal divider -->
+                    <div class="horizontal-divider"></div>
+                    <!-- option item -->
+                    <p>Favourite Songs</p>
+                    <!-- horizontal divider -->
+                    <div class="horizontal-divider"></div>
+                    <!-- closing icon -->
+                    <p><a href="#"><i class="fas fa-times"></i></a></p>
+                </div>
+            </div>
+            <!-- aside container -->
+            <div class="aside-playlist-container mt-0px-except-desktop">
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="playlists-card">
+                    <!-- song serial number -->
+                    <div class="playlists-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="playlists-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="">
+                    </div>
+                    <!-- song details -->
+                    <div class="playlists-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="playlists-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </aside>
+
+        <!-- sidebar fixed container -->
+        <div id="sideBar">
+            <!-- a tag for target -->
+            <a href="#playlists">
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">P</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">L</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">A</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">Y</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">L</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">I</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">S</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">T</p>
+                <!-- sidebar-divider -->
+                <div class="sidebar-divider"></div>
+                <!-- sidebar-options-letter -->
+                <p class="sidebar-text">S</p>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- playbar -->
+    <footer id="music-player-playbar">
+        <!-- song details section -->
+        <div class="playbar-song-details">
+            <!-- song image -->
+            <div class="playbar-song-img">
+                <img src="./images/songs/imagine-by-john.jpg" alt="Song Image">
+            </div>
+            <!-- song & artist name -->
+            <div class="playbar-song-name">
+                <!-- song name -->
+                <p class="song-name">Imageine by John</p>
+                <!-- singer name -->
+                <p class="singer-name">John Lennon</p>
+            </div>
+            <!-- icons -->
+            <div class="playbar-song-icon">
+                <!-- heart icon -->
+                <i class="far fa-heart"></i>
+                <!-- ban icon -->
+                <i class="fas fa-ban"></i>
+            </div>
+        </div>
+
+        <!-- progress bar and icons -->
+        <div class="playbar-song-progressbar">
+            <!-- icons section -->
+            <div class="progressbar-icon">
+                <!-- random icon -->
+                <i class="fas fa-random"></i>
+                <!-- backward icon -->
+                <i class="fas fa-step-backward"></i>
+                <!-- play-pause icon -->
+                <i class="far fa-pause-circle"></i>
+                <!-- forward icon -->
+                <i class="fas fa-step-forward"></i>
+                <!-- repeat icon -->
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <!-- song length and progress bar -->
+            <div class="progressbar-div">
+                <!-- song current time -->
+                <span>1.33</span>
+                <!-- song progressbar -->
+                <div class="outer-div">
+                    <div class="inner-div"></div>
+                </div>
+                <!-- song length -->
+                <span>4.44</span>
+            </div>
+        </div>
+
+        <!-- volume controls section -->
+        <div class="volume-controls">
+            <!-- all icons -->
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-laptop"></i>
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-expand-alt"></i>
+            <!-- volume progress bar -->
+            <div class="volume-controls-progressbar">
+                <div class="outer-div">
+                    <div class="inner-div"></div>
+                </div>
+            </div>
+            <i class="fas fa-volume-up"></i>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

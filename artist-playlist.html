@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of the web-page -->
+    <title>Single Artist Playlist | Ninja Studio</title>
+    <!-- external css file linking -->
+    <!-- primary css file -->
+    <link rel="stylesheet" href="artist-playlist-style.css">
+    <!-- secondary/responsive css file -->
+    <link rel="stylesheet" href="secondaryPage-responsive.css">
+    <!-- font awesome cdn linking -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- header of the music player -->
+    <div class="header">
+        <!-- logo and title container of the site -->
+        <div class="logo-title-container">
+            <!-- logo container -->
+            <div class="logo">
+                <!-- headphone icon -->
+                <i id="headphone" class="fas fa-headphones-alt"></i>
+            </div>
+            <!-- site-title container -->
+            <div class="site-title">
+                <!-- site title names -->
+                <h3>Ninja</h3>
+                <h1>Studio</h1>
+            </div>
+        </div>
+
+        <!-- fav text part of the site -->
+        <div class="text-fav">Favourites</div>
+
+        <!-- navigation section which contains search bar, 
+                notification icon and avtaar icon - for lg,md,sm device-->
+        <nav class="for-large-device">
+            <ul>
+                <li>
+                    <!-- Navbar search bar container -->
+                    <div class="nav-search-container">
+                        <div>
+                            <!-- search icon -->
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <!-- input for search bar -->
+                        <input type="text" name="" id="" placeholder="Search">
+                        <div>
+                            <!-- mic icon -->
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- navbar notification container -->
+                    <div class="nav-notification-container">
+                        <!-- bell icon -->
+                        <i class="fas fa-bell notification-icon"></i>
+                    </div>
+                </li>
+                <li>
+                    <!-- navbar avtaar container -->
+                    <div class="nav-avtaar-container">
+                        <!-- user icon -->
+                        <i class="fas fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- only for less than 576px (xs) -->
+        <!-- humburger-icon -->
+        <a class="humburger-icon only-mobile" href="#nav-only-mobile">
+            <!-- <div class="humburger-icon only-mobile"> -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <!-- </div> -->
+        </a>
+
+        <nav id="nav-only-mobile">
+            <a class="nav-slider-closer" href="#">X</a>
+            <ul>
+                <li>
+                    <!-- navbar notification container -->
+                    <div class="nav-notification-container">
+                        Notification
+                        <!-- bell icon -->
+                        <i class="fas fa-bell notification-icon"></i>
+                    </div>
+                </li>
+                <li>
+                    <!-- navbar avtaar container -->
+                    <div class="nav-avtaar-container">
+                        User
+                        <!-- user icon -->
+                        <i class="fas fa-user"></i>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- search bar - only mobile -->
+    <div class="search-bar-for-mobile only-mobile">
+        <div class="search-bar-container-for-mobile">
+            <div>
+                <!-- search icon -->
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- input for search bar -->
+            <input type="text" name="" id="" placeholder="Search">
+            <div>
+                <!-- mic icon -->
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- main container of the site -->
+    <main id="main-content-container">
+        <!-- main container of the content of the music player -->
+        <div id="main-container">
+
+            <!-- artist details container -->
+            <div class="artist-details-container">
+                <!-- artist image container -->
+                <div class="artist-img">
+                    <!-- artist image -->
+                    <img src="./images/artists/coldplay_1.jpg" alt="Artist Image">
+                </div>
+                <!-- artist details container-->
+                <div class="artist-details">
+                    <!-- title - artist name and followers -->
+                    <div class="heading-and-followers">
+                        <!-- artist name -->
+                        <h2 class="sub-headings">ColdPlay</h2>
+                        <!-- followers -->
+                        <p class="followers font-size-only-mobile-device-artist-details">851 Followers</p>
+                    </div>
+                    <!-- Artist band Intro container -->
+                    <div class="band-intro">
+                        <!-- band name  -->
+                        <p class="band font-size-only-mobile-device-artist-details">British Band</p>
+                        <!-- band intro -->
+                        <p class="desc font-size-only-mobile-device-artist-details">
+                            Coldplay is a British music band that has enjoyed continuous success since their
+                            inception in 1996 through their initelligent and soulful songs. The band members are
+                            Chris Martin (lead vocals), Jonny Buckland (lead guitarist), Guy Berryman (bass guitar)
+                            and Will Champion (drums).
+                        </p>
+                    </div>
+                    <!-- button group -->
+                    <div class="btn-and-follow">
+                        <!-- play all btn -->
+                        <button class="play-btn">Play All</button>
+                        <!-- follow link -->
+                        <a class="follow-opt font-size-only-mobile-device-artist-details" href="#">
+                            <span>Follow</span>
+                        </a>
+                    </div>
+                    <!-- total tracks and albums -->
+                    <div class="tracks-and-albums font-size-only-mobile-device-artist-details">
+                        <p>247 Tracks | 128 Albums</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- artist song container -->
+            <div class="artist-songs-container">
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+                <!-- artist song card -->
+                <div class="artist-song-card ">
+                    <!-- song sequence -->
+                    <div class="song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song img -->
+                    <div class="song-image">
+                        <img src="./images/songs/english/song1.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details font-size-only-mobile-device-artist-songs">
+                        <!-- song name -->
+                        <span class="song-name">Believers</span>
+                        <!-- singer name-->
+                        <span class="singer-name">Imagine Dragons</span>
+                    </div>
+                    <!-- other icons -->
+                    <div class="song-icon font-size-only-mobile-device-artist-songs">
+                        <!-- like icon -->
+                        <i class="far fa-heart heart-icon"></i>
+                        <!-- add to playlist icon -->
+                        <i class="fas fa-plus plus-icon"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- aside similar-artists section -->
+        <aside id="similar-artists-section">
+            <!-- closing icon -->
+            <p class="close-sidebar"><a href="#"><i class="fas fa-times"></i></a></p>
+
+            <!-- section title -->
+            <h2 class="aside-headings sub-headings">
+                Similar Artists
+            </h2>
+            <!-- aside container -->
+            <div class="aside-playlist-container">
+
+                <!-- playlist-card -->
+                <div class="similar-artists-card font-size-only-mobile-device-aside-section">
+                    <!-- song image -->
+                    <div class="song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="artist image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details">
+                        <!-- song name -->
+                        <p class="similar-artist-song-name">Ve Maahi</p>
+                        <!-- artist name -->
+                        <p class="similar-artist-singer-name">Arijit Singh</p>
+                    </div>
+
+                    <div class="other-options">
+                        <!-- 3 dots container/other options -->
+                        <div class="dots-container">
+                            <!-- each dot *3-->
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <!-- song length -->
+                        <p class="song-duration">4.44</p>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="similar-artists-card font-size-only-mobile-device-aside-section">
+                    <!-- song image -->
+                    <div class="song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="artist image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details">
+                        <!-- song name -->
+                        <p class="similar-artist-song-name">Ve Maahi</p>
+                        <!-- artist name -->
+                        <p class="similar-artist-singer-name">Arijit Singh</p>
+                    </div>
+
+                    <div class="other-options">
+                        <!-- 3 dots container/other options -->
+                        <div class="dots-container">
+                            <!-- each dot *3-->
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <!-- song length -->
+                        <p class="song-duration">4.44</p>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="similar-artists-card font-size-only-mobile-device-aside-section">
+                    <!-- song image -->
+                    <div class="song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="artist image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details">
+                        <!-- song name -->
+                        <p class="similar-artist-song-name">Ve Maahi</p>
+                        <!-- artist name -->
+                        <p class="similar-artist-singer-name">Arijit Singh</p>
+                    </div>
+
+                    <div class="other-options">
+                        <!-- 3 dots container/other options -->
+                        <div class="dots-container">
+                            <!-- each dot *3-->
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <!-- song length -->
+                        <p class="song-duration">4.44</p>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="similar-artists-card font-size-only-mobile-device-aside-section">
+                    <!-- song image -->
+                    <div class="song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="artist image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details">
+                        <!-- song name -->
+                        <p class="similar-artist-song-name">Ve Maahi</p>
+                        <!-- artist name -->
+                        <p class="similar-artist-singer-name">Arijit Singh</p>
+                    </div>
+
+                    <div class="other-options">
+                        <!-- 3 dots container/other options -->
+                        <div class="dots-container">
+                            <!-- each dot *3-->
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <!-- song length -->
+                        <p class="song-duration">4.44</p>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="similar-artists-card font-size-only-mobile-device-aside-section">
+                    <!-- song image -->
+                    <div class="song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="artist image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details">
+                        <!-- song name -->
+                        <p class="similar-artist-song-name">Ve Maahi</p>
+                        <!-- artist name -->
+                        <p class="similar-artist-singer-name">Arijit Singh</p>
+                    </div>
+
+                    <div class="other-options">
+                        <!-- 3 dots container/other options -->
+                        <div class="dots-container">
+                            <!-- each dot *3-->
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <!-- song length -->
+                        <p class="song-duration">4.44</p>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="similar-artists-card font-size-only-mobile-device-aside-section">
+                    <!-- song image -->
+                    <div class="song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="artist image">
+                    </div>
+                    <!-- song details -->
+                    <div class="song-details">
+                        <!-- song name -->
+                        <p class="similar-artist-song-name">Ve Maahi</p>
+                        <!-- artist name -->
+                        <p class="similar-artist-singer-name">Arijit Singh</p>
+                    </div>
+
+                    <div class="other-options">
+                        <!-- 3 dots container/other options -->
+                        <div class="dots-container">
+                            <!-- each dot *3-->
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <!-- song length -->
+                        <p class="song-duration">4.44</p>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+        <!-- aside recently played songs section -->
+        <aside id="recently-played-section">
+            <!-- closing icon -->
+            <p class="close-sidebar"><a href="#"><i class="fas fa-times"></i></a></p>
+            <!-- plylist title -->
+            <h2 class="sub-headings">
+                Recently Played
+            </h2>
+            <!-- aside container -->
+            <div class="aside-playlist-container">
+
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- playlist-card -->
+                <div class="recently-played-card font-size-only-mobile-device-aside-section">
+                    <!-- song serial number -->
+                    <div class="recently-played-song-sequence">
+                        <span>01</span>
+                    </div>
+                    <!-- song image -->
+                    <div class="recently-played-song-image">
+                        <img src="./images/songs/hindi/s3.jpg" alt="song image">
+                    </div>
+                    <!-- song details -->
+                    <div class="recently-played-song-details">
+                        <!-- song name -->
+                        <p>Ve Maahi</p>
+                        <!-- artist name -->
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="recently-played-song-icons">
+                        <!-- heart icon -->
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </aside>
+
+        <!-- sidebar fixed container options-->
+        <div id="sidebar-options">
+            <!-- closing icon -->
+            <p class="close-sidebar">
+                <a href="#">
+                    <i class="fas fa-times"></i>
+                </a>
+            </p>
+            <!-- options ul -->
+            <ul>
+                <li>
+                    <!-- option 1 -->
+                    <a href="#similar-artists-section">Similar Artists</a>
+                </li>
+                <li>
+                    <!-- option 2 -->
+                    <a href="#recently-played-section">Recently Played</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- fixed sidebar container -->
+        <div id="sideBar">
+            <a href="#sidebar-options">
+                <!--fixed sidebar letter-->
+                <p class="sidebar-text">M</p>
+                <!-- sidebar horizontal divider -->
+                <div class="sidebar-divider"></div>
+                <!--fixed sidebar letter-->
+                <p class="sidebar-text">O</p>
+                <!-- sidebar horizontal divider -->
+                <div class="sidebar-divider"></div>
+                <!--fixed sidebar letter-->
+                <p class="sidebar-text">R</p>
+                <!-- sidebar horizontal divider -->
+                <div class="sidebar-divider"></div>
+                <!--fixed sidebar letter-->
+                <p class="sidebar-text">E</p>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- playbar -->
+    <footer id="music-player-playbar">
+        <!-- song details section -->
+        <div class="playbar-song-details">
+            <!-- song image -->
+            <div class="playbar-song-img">
+                <img src="./images/songs/imagine-by-john.jpg" alt="">
+            </div>
+            <!-- song & artist name -->
+            <div class="playbar-song-name">
+                <!-- song name -->
+                <p class="song-name">Imageine by John</p>
+                <!-- singer name -->
+                <p class="singer-name">John Lennon</p>
+            </div>
+            <!-- icons -->
+            <div class="playbar-song-icon">
+                <!-- heart icon -->
+                <i class="far fa-heart"></i>
+                <!-- ban icon -->
+                <i class="fas fa-ban"></i>
+            </div>
+        </div>
+
+        <!-- progress bar and icons -->
+        <div class="playbar-song-progressbar">
+            <!-- icons section -->
+            <div class="progressbar-icon">
+                <!-- random icon -->
+                <i class="fas fa-random"></i>
+                <!-- backward icon -->
+                <i class="fas fa-step-backward"></i>
+                <!-- play-pause icon -->
+                <i class="far fa-pause-circle"></i>
+                <!-- forward icon -->
+                <i class="fas fa-step-forward"></i>
+                <!-- repeat icon -->
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <!-- song length and progress bar -->
+            <div class="progressbar-div">
+                <!-- song current time -->
+                <span>1.33</span>
+                <!-- song progressbar -->
+                <div class="outer-div">
+                    <div class="inner-div"></div>
+                </div>
+                <!-- song length -->
+                <span>4.44</span>
+            </div>
+        </div>
+
+        <!-- volume controls section -->
+        <div class="volume-controls">
+            <!-- all icons -->
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-laptop"></i>
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-expand-alt"></i>
+            <!-- volume progress bar -->
+            <div class="volume-controls-progressbar">
+                <div class="outer-div">
+                    <div class="inner-div"></div>
+                </div>
+            </div>
+            <i class="fas fa-volume-up"></i>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

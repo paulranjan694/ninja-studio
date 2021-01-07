@@ -1,0 +1,776 @@
+/*************min-width: 1201px*******************/
+@media screen and (min-width: 1201px) {
+  nav.for-large-device {
+    margin-left: 25%;
+  }
+}
+
+/*************max-width: 1200px*******************/
+@media screen and (max-width: 1200px) {
+  /*---latest release song section--- */
+
+  /* latest release song img div */
+  .latest-release-song-img {
+    width: 27%;
+  }
+  /* song length and other option */
+  .latest-release-song-others-details {
+    left: 36%;
+  }
+
+  /* ---popular artists section--- */
+  /* artist card */
+  .popular-artists-card {
+    height: 103px;
+  }
+
+  /* ---different stations section--- */
+  /* different station container */
+  #stations-design-section {
+    margin-left: 23px;
+    margin-top: 20px;
+  }
+
+  /* station design section first div child */
+  #stations-design-section div:first-child {
+    width: 110px;
+    height: 50px;
+  }
+
+  /* station design section 2 div child */
+  #stations-design-section div:nth-child(2) {
+    width: 90px;
+    height: 70px;
+  }
+
+  /* station design section 3 div child */
+  #stations-design-section div:nth-child(3) {
+    width: 70px;
+    height: 85px;
+  }
+
+  /* logo container */
+  .logo-stations {
+    margin-top: 4px;
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+  }
+
+  /* logo and name container */
+  .stations-logo-and-name-card {
+    width: 13%;
+    height: 78px;
+    left: 17%;
+  }
+
+  /* station name and card p tag */
+  .stations-logo-and-name-card p {
+    font-size: 14px;
+    margin-top: -50px;
+  }
+
+  /* ---different category--- */
+  /* different cat container */
+  .category-items div {
+    width: 187px;
+  }
+
+  /* category items p tag */
+  .category-items p {
+    margin-left: 56px;
+    font-size: 15px;
+  }
+
+  /* category-items - 1st p child */
+  .category-items:first-child p {
+    margin-left: 76px !important;
+  }
+
+  /* latest song section */
+  .song-card div {
+    width: 107px;
+    height: 107px;
+  }
+}
+
+/*************max-width: 992px*******************/
+
+@media screen and (max-width: 992px) {
+  /* common css rule */
+  /* margin top - 0px for devices width - md, sm , xs */
+  .mt-0px-except-desktop {
+    margin-top: 0px !important;
+  }
+
+  /* header section starts here */
+
+  /* header tag */
+  .header {
+    flex-wrap: nowrap;
+  }
+
+  /* favourites text css rules */
+  .text-fav {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* main container of the player */
+  /* main container */
+  #main-container {
+    width: 80%;
+    left: 7%;
+  }
+
+  /* ---popular artists section--- */
+  /* artist card */
+  .popular-artists-card {
+    height: 100px;
+  }
+  /* ---aside - playlists starts here--- */
+  /* aside playlists */
+  #playlists {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* aside playlist- on target */
+  #playlists:target {
+    width: 300px;
+    height: 68vh;
+    position: fixed;
+    top: 15%;
+    right: 0;
+    cursor: pointer;
+    z-index: 10;
+    background-color: #0e3f67;
+    box-shadow: 1px 1px 5px 2px #beb4d0;
+  }
+
+  /* closing opt of sidebar on targeting playlists */
+  #playlists:target .close-sidebar {
+    display: inline;
+    position: fixed;
+    right: 1%;
+    top: 16%;
+    z-index: 10;
+  }
+
+  /* close sidebar a tag */
+  .close-sidebar a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+  }
+
+  /* aside - playlists dropdown - hidden for md, sm,xs */
+  .only-for-desktop {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  /* ---footer - playbar--- */
+
+  /* footer - playbar*/
+  /* playbar song details section*/
+  .playbar-song-details {
+    margin-left: 10px;
+  }
+
+  /* playbar song icon */
+  .playbar-song-icon i {
+    font-size: 12px !important;
+  }
+
+  /* playbar progressbar icons section */
+  .progressbar-icon {
+    left: 19%;
+  }
+
+  /* playbar progressbar icons section- icons */
+  .progressbar-icon i {
+    margin: 14px 10px 15px;
+  }
+
+  /* play/pause icon of playbar progressbar icons section */
+  .progressbar-icon i:nth-child(3) {
+    font-size: 25px;
+  }
+
+  /* outer div of song progressbar */
+  .progressbar-div .outer-div {
+    width: 200px;
+  }
+
+  /* inner div of song progressbar */
+  .progressbar-div .inner-div {
+    width: 75px;
+  }
+
+  /* inner div after element */
+  .progressbar-div .inner-div::after {
+    left: 49%;
+    top: 56%;
+  }
+
+  /* volume controls container */
+  /* outer div of volume progressbar */
+  .volume-controls-progressbar .outer-div {
+    width: 55px;
+  }
+
+  /* inner div of volume progressbar */
+  .volume-controls-progressbar .inner-div {
+    width: 25px;
+  }
+
+  /* after element of inner div of volume progressbar */
+  .volume-controls-progressbar .inner-div::after {
+    left: 85vw;
+  }
+
+  /* ---sidebar section--- */
+  /* sidebar fixed container */
+  #sideBar {
+    position: fixed;
+    top: 20%;
+    right: 0%;
+    box-shadow: 1px 1px 5px 2px #beb4d0;
+    cursor: pointer;
+  }
+
+  /* fixed sidebar a tag */
+  #sideBar a {
+    text-decoration: none;
+  }
+
+  /* fixed sidebar text */
+  .sidebar-text {
+    font-size: 12px;
+    color: white;
+    padding: 5px 18px;
+    background-color: #311661;
+  }
+
+  /* fixed sidebar - horizontal divider */
+  .sidebar-divider {
+    width: 65%;
+    height: 1px;
+    background-color: #757272;
+  }
+}
+/***************** max-width: 768px************************/
+
+@media screen and (max-width: 768px) {
+  /* ---header section starts here--- */
+  /* logo & title container */
+  .logo-title-container {
+    margin-left: 11px;
+  }
+
+  /* logo container */
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* logo container-> headphone icon */
+  .logo #headphone {
+    font-size: 25px;
+  }
+
+  /* site title container */
+  .site-title {
+    left: 4%;
+    margin-top: 4%;
+  }
+
+  /* site title primary name(first name) */
+  .site-title h3 {
+    font-size: 15px;
+    margin-left: -20px;
+    margin-bottom: -4px;
+  }
+
+  /* site title secondary name(second name) */
+  .site-title h1 {
+    font-size: 23px;
+  }
+
+  /* navigation bar-except mobile device */
+  nav.for-large-device {
+    margin-left: 85px;
+  }
+
+  /* navigation bar ul il-except mobile device */
+  nav.for-large-device ul li {
+    margin: 0 1.4rem;
+  }
+
+  /* navbar search container */
+  .nav-search-container {
+    padding: 0px 8px;
+    width: 120%;
+  }
+
+  /* navbar search container input  */
+  .nav-search-container input[type='text'] {
+    padding: 7px;
+  }
+
+  /* navbar search container first child(div)  */
+  .nav-search-container div:first-child {
+    top: 10px;
+    left: 3%;
+    font-size: 12px;
+  }
+
+  /* navbar search container last child(div) */
+  .nav-search-container div:last-child {
+    top: 10px;
+    left: 90%;
+    font-size: 12px;
+  }
+
+  /* navbar notification container */
+  .nav-notification-container {
+    font-size: 22px;
+    margin-left: 60px;
+  }
+
+  /* red dot after  bell icon of navbar notification container */
+  .nav-notification-container i::after {
+    width: 6px;
+    height: 6px;
+    margin-top: 1px;
+    margin-left: -7px;
+  }
+
+  /* navbar aavtaar/user container  */
+  .nav-avtaar-container {
+    font-size: 10px;
+    top: -5%;
+    padding: 10px;
+  }
+
+  /* main container of the player */
+  #main-container {
+    width: 89%;
+    left: 6px;
+  }
+
+  /* ----latest release section---- */
+
+  /* latest release song img div */
+  .latest-release-song-img {
+    width: 90px;
+  }
+
+  /* song name and release date */
+  .latest-release-song-name-and-date {
+    left: 4%;
+  }
+
+  /* song length and other option */
+  .latest-release-song-others-details {
+    left: 20%;
+  }
+
+  /* ---popular artists section--- */
+  /* popular artist container */
+  .popular-artists-container {
+    justify-content: space-evenly;
+  }
+
+  /* artist card */
+  .popular-artists-card {
+    width: 110px;
+    height: 115px;
+    margin-bottom: 33px;
+  }
+
+  /* ---different stations section--- */
+  /* different station container */
+  #diff-stations-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* station design section - station logo */
+  #stations-design-section {
+    margin-top: 40px;
+  }
+
+  /* station logo and name card */
+  .stations-logo-and-name-card {
+    width: 16%;
+    left: 0%;
+  }
+
+  /* ---different-category--- */
+  /* different category container */
+  #different-category-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /* each category items */
+  .category-items {
+    margin-bottom: 25px;
+  }
+
+  /* ---latest song section--- */
+  /* latest song container */
+  .latest-song-container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  /* latest song container - song card */
+  .song-card {
+    margin-bottom: 8vh;
+  }
+
+  /* aside playlist song image*/
+  .playlists-song-image {
+    width: 60px;
+    height: 50px;
+  }
+
+  /* ---footer - playbar--- */
+
+  /* footer - playbar*/
+  /* playbar song details section*/
+  .playbar-song-details {
+    margin-left: 7px;
+  }
+
+  /* all div of  playbar-song-details section */
+  .playbar-song-details div {
+    margin-right: 5px;
+  }
+
+  /* playbar song image */
+  .playbar-song-img {
+    height: 50px;
+    width: 55px;
+  }
+
+  /* playbar song name and icon section  */
+  .playbar-song-name,
+  .playbar-song-icon {
+    margin-top: 2px;
+  }
+
+  /* playbar progressbar icons section */
+  .progressbar-icon {
+    left: 27%;
+  }
+  /* playbar progressbar icons section- icons */
+  .progressbar-icon i {
+    margin: 14px 3px 15px;
+  }
+
+  /* play/pause icon of playbar progressbar icons section */
+  .progressbar-icon i:nth-child(3) {
+    margin-top: 10px;
+  }
+
+  /* outer div of song progressbar */
+  .progressbar-div .outer-div {
+    width: 145px;
+  }
+
+  /* inner div after element */
+  .progressbar-div .inner-div::after {
+    left: 53vw;
+  }
+
+  /* outer div of song progressbar */
+  .volume-controls-progressbar .outer-div {
+    width: 40px;
+  }
+  /* inner div of song progressbar */
+  .volume-controls-progressbar .inner-div {
+    width: 25px;
+  }
+
+  /* inner div after element */
+  .volume-controls-progressbar .inner-div::after {
+    left: 87vw;
+  }
+
+  /* ---sidebar section--- */
+  /* fixed sidebar text */
+  .sidebar-text {
+    font-size: 11px;
+    padding: 5px 15px;
+  }
+}
+
+/* ****************************************************************** */
+@media screen and (max-width: 576px) {
+  /* ---header section starts here--- */
+
+  /* logo & title container */
+  .logo-title-container {
+    margin-left: 5px;
+  }
+  /* logo container */
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* logo container-> headphone icon */
+  .logo #headphone {
+    font-size: 19px;
+  }
+
+  /* site title secondary name(second name) */
+  .site-title h1 {
+    font-size: 20px;
+  }
+
+  /* hiding navigation which is used for large device*/
+  nav.for-large-device {
+    display: none;
+  }
+
+  /* humburger icon for mobile devices */
+  .humburger-icon {
+    margin-left: 30%;
+    margin-top: -7%;
+  }
+
+  /* divs of humburger icon */
+  .humburger-icon div {
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+  }
+
+  /* humburger icon 2nd div child */
+  .humburger-icon div:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  /* humburger icon 3rd div child */
+  .humburger-icon div:nth-child(3) {
+    margin-top: 20px;
+  }
+
+  /* navigation only for mobile - on target */
+  #nav-only-mobile:target {
+    width: 50%;
+    height: 185vh;
+    top: 0;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(#3a0f4a, #232d94);
+  }
+
+  /* navigation ul - only for mobile */
+  #nav-only-mobile ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* navigation ul li - only for mobile */
+  #nav-only-mobile ul li {
+    top: 4%;
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #4c4040;
+  }
+
+  /* navigation bar close icon*/
+  #nav-only-mobile:target .nav-slider-closer {
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+    right: 6%;
+    top: 1%;
+    position: absolute;
+  }
+
+  /* navbar notification container */
+  .nav-notification-container {
+    font-size: 22px;
+    margin-left: 15px;
+  }
+
+  /* navbar notification container icons */
+  .nav-notification-container i {
+    margin-left: 5px;
+    font-size: 27px;
+  }
+
+  /* navbar aavtaar/user container  */
+  .nav-avtaar-container {
+    border: none;
+    font-size: 22px;
+    margin-left: 15px;
+  }
+
+  /* navbar aavtaar/user icons */
+  .nav-avtaar-container i {
+    margin-left: 5px;
+    font-size: 27px;
+  }
+
+  /* search bar section for mobile only */
+  .search-bar-for-mobile {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 3px;
+    position: absolute;
+    margin-top: 11%;
+  }
+
+  /* search bar container for mobile only */
+  .search-bar-container-for-mobile {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: #eadbc4;
+  }
+
+  /* search bar text field */
+  .search-bar-container-for-mobile input[type='text'] {
+    padding: 6px;
+    width: 100%;
+    font-size: 0.9rem;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    margin-left: 3px;
+    border: 0;
+    color: black;
+  }
+
+  /* navbar search container first child(div)  */
+  .search-bar-container-for-mobile div:first-child {
+    top: 30px;
+    left: 6%;
+    position: absolute;
+    font-size: 16px;
+    padding: 5px;
+    color: black;
+    background-color: #eadbc4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  /* navbar search container last child(div) */
+  .search-bar-container-for-mobile div:last-child {
+    top: 30px;
+    left: 89%;
+    position: absolute;
+    font-size: 16px;
+    padding: 5px;
+    color: black;
+    background-color: #eadbc4;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  /* on focus - search bar text field */
+  .search-bar-container-for-mobile input[type='text']:focus {
+    outline: none;
+  }
+
+  /* main container of the player */
+  #main-container {
+    width: 89%;
+    left: 6px;
+    top: 20%;
+  }
+
+  /* ---carousal section---  */
+  /* each div of carousal container */
+  #carousal-container div {
+    width: 230px;
+    height: 120px;
+  }
+
+  /* carousal conatiner on div hover */
+  #carousal-container div:hover {
+    transform: scale(1.1);
+  }
+
+  /* ----latest release section---- */
+
+  /* latest release container */
+
+  /* latest release card */
+  .latest-release-card {
+    width: 100%;
+  }
+
+  /* only to song release date */
+  .latest-release-song-name-and-date p:last-child {
+    margin-top: 10px;
+  }
+
+  /* song length and other option */
+  .latest-release-song-others-details {
+    left: 38%;
+  }
+
+  /* ---popular artists section--- */
+  /* popular artist container */
+  .popular-artists-container {
+    justify-content: space-evenly;
+  }
+
+  /* ---different stations section--- */
+  #diff-stations-container {
+    align-items: center;
+    height: 60vh;
+  }
+
+  /* station design section - station logo */
+  #stations-design-section {
+    margin-left: 50px;
+    margin-top: -66px;
+  }
+
+  /* logo container */
+  .logo-stations {
+    margin-top: -1px;
+  }
+
+  /* logo and name container */
+  .stations-logo-and-name-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /* station logo and name card */
+  .stations-logo-and-name-card {
+    width: 21%;
+    height: 95px;
+    left: 0%;
+  }
+
+  /* ---footer - playbar--- */
+  /* footer - playbar*/
+  .playbar-song-icon i {
+    font-size: 12px !important;
+  }
+
+  /* font-size only for mobile */
+  .font-size-only-for-mobile {
+    font-size: 15px !important;
+  }
+}

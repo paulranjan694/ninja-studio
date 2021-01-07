@@ -1,0 +1,775 @@
+/* css variable for different colors and linearGradient */
+:root {
+  --background-gradient: linear-gradient(180deg, #580d65, #1b2d96);
+  --header-bg-gradient: linear-gradient(#2d0633, #521577);
+
+  --logo-background-gradient: linear-gradient(
+    198deg,
+    #4b1ca0,
+    #795480,
+    #4811ab
+  );
+  --logo-icon-color: #a7a2af;
+
+  --site-title-color: white;
+  --search-bar-background-color: #2c0b38;
+  --common-color: white;
+  --bgcolor-diff-stations: linear-gradient(#212b92, #1e275d);
+}
+
+/* CSS Rule  */
+/* making default margin and padding to 0px */
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* all img tag  */
+img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* css rule for body */
+body {
+  background-image: var(--background-gradient);
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+
+/* common css rules */
+
+/* for heading like- Latest Songs etc.. */
+.sub-headings {
+  color: var(--common-color);
+}
+
+/* margin bottom */
+.mb-75px {
+  margin-bottom: 75px;
+}
+
+.mb-115px {
+  margin-bottom: 115px;
+}
+/* colors common used */
+.c-white {
+  color: var(--common-color);
+}
+
+/* sidebar close icon-except lg and xl devices */
+.close-sidebar {
+  display: none;
+}
+
+/* header section starts here */
+
+/* header tag */
+.header {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 3px;
+  position: fixed;
+  background: var(--header-bg-gradient);
+  z-index: 11;
+}
+
+/* applying display flex to all children and sub-children under header */
+.header div,
+nav,
+nav ul {
+  display: flex;
+}
+
+/* logo & title container */
+.logo-title-container {
+  margin-left: 33px;
+}
+
+/* logo container */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: var(--logo-background-gradient);
+  /* border: 2px solid black; */
+  border-radius: 50%;
+}
+
+/* logo container-> headphone icon */
+.logo #headphone {
+  font-size: 35px;
+  position: absolute;
+  color: var(--logo-icon-color);
+  animation: changeShape 0.5s ease-in-out infinite alternate;
+}
+/* animations for logo */
+@keyframes changeShape {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+/* site title container */
+.site-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--site-title-color);
+  left: 8%;
+  position: relative;
+}
+
+/* site title primary name(first name) */
+.site-title h3 {
+  font-size: 20px;
+  margin-left: -22px;
+  margin-bottom: -6px;
+}
+
+/* site title secondary name(second name) */
+.site-title h1 {
+  font-size: 29px;
+}
+
+/* favourites text css rules */
+.text-fav {
+  font-size: 14px;
+  color: var(--common-color);
+  font-weight: 800;
+}
+
+/* common rules for navigation bar ul part */
+/* navigation bar for lg and xl device */
+nav.for-large-device {
+  display: flex;
+  justify-content: space-between;
+}
+/* navigation bar ul li */
+nav.for-large-device ul li {
+  list-style: none;
+  margin: 0 2rem;
+}
+
+/* navbar search container */
+.nav-search-container {
+  background-color: var(--search-bar-background-color);
+  padding: 0px 10px;
+  width: 133%;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* navbar search container input  */
+.nav-search-container input[type='text'] {
+  padding: 9px;
+  width: 100%;
+  font-size: 0.9rem;
+  left: 5%;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  margin-left: 3px;
+  background-color: transparent;
+  border: 0;
+  color: var(--common-color);
+}
+
+/* navbar search container first child(div)  */
+.nav-search-container div:first-child {
+  top: 8px;
+  left: 2%;
+  position: absolute;
+  font-size: 20px;
+  transform: rotate(12deg);
+  color: var(--common-color);
+}
+
+/* navbar search container last child(div) */
+.nav-search-container div:last-child {
+  top: 8px;
+  left: 90%;
+  position: absolute;
+  font-size: 20px;
+  color: var(--common-color);
+}
+
+/* navbar search container input onfocus  */
+.nav-search-container input[type='text']:focus {
+  outline: none;
+}
+
+/* navbar notification container */
+.nav-notification-container {
+  font-size: 24px;
+  top: 14%;
+  position: relative;
+  color: var(--common-color);
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  margin-left: 80px;
+}
+
+/* navbar notification container on hover */
+.nav-notification-container i:hover {
+  /* color: white; */
+  animation: shakeEffect 0.5s ease-in-out infinite alternate;
+}
+
+/* animation on bell icon | on hover */
+@keyframes shakeEffect {
+  0% {
+    transform: rotate(18deg);
+  }
+
+  50% {
+    transform: rotate(-18deg);
+  }
+
+  100% {
+    transform: rotate(18deg);
+  }
+}
+
+/* red dot after  bell icon of navbar notification container */
+.nav-notification-container i::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: -9px;
+}
+
+/* navbar aavtaar/user container  */
+.nav-avtaar-container {
+  font-size: 20px;
+  top: -15%;
+  position: relative;
+  color: var(--common-color);
+  /* transition: all 0.5s ease-in-out; */
+  cursor: pointer;
+  border: 1px solid var(--common-color);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* navbar user icon */
+.nav-avtaar-container i {
+  transition: all 0.3s ease-in-out;
+}
+
+/* navbar user icon :hover */
+.nav-avtaar-container i:hover {
+  transform: scale(1.2);
+}
+
+.only-mobile,
+#nav-only-mobile {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* ----header section ends here---- */
+
+/*----main content starts here--- */
+
+/* main content container of the site */
+#main-content-container {
+  width: 100%;
+  height: 150vh;
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari */
+#main-content-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#main-content-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /*Firefox */
+}
+
+/* main container of the player */
+#main-container {
+  width: 60%;
+  height: auto;
+  position: relative;
+  left: 5%;
+  top: 12%;
+}
+
+/* ---artist details section--- */
+/* artist details container  */
+.artist-details-container {
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #1c2e96, #472486);
+  margin-bottom: 20px;
+}
+
+/* artist image */
+.artist-img {
+  width: 40%;
+  height: 350px;
+  display: inline-block;
+  /* background-image: linear-gradient(to bottom, transparent, rgba(20, 27, 65, 1)),
+    url(./images/artists/coldplay_1.jpg);
+  background-size: cover; */
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    center bottom,
+    center top,
+    color-stop(0, rgba(0, 0, 0, 0)),
+    color-stop(1, rgba(0, 0, 0, 1))
+  );
+}
+
+/* artist details section */
+.artist-details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  margin: 0px 15px;
+  color: var(--common-color);
+}
+
+/* artist name and followers */
+.heading-and-followers {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* artist followers section */
+.followers {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* band intro section */
+.band-intro {
+  font-size: 12px;
+  color: #d2d2d2;
+}
+
+/* band name section */
+.band {
+  margin-top: 10px;
+}
+
+/* band desc section */
+.desc {
+  margin-top: 5px;
+}
+
+/* btn and follow link group */
+.btn-and-follow {
+  display: flex;
+  margin-top: 50px;
+}
+
+/* play btn section */
+.play-btn {
+  padding: 4px;
+  width: 25%;
+  font-size: 15px;
+  color: white;
+  background: linear-gradient(#7632d6, #0e1c6d);
+}
+
+/* follow link */
+.follow-opt {
+  text-decoration: none;
+  color: white;
+  margin-top: 3px;
+  margin-left: 60px;
+}
+
+/* total tracks and albums */
+.tracks-and-albums {
+  font-size: 11px;
+}
+
+/* ---artist songs section--- */
+/* ---artist songs container--- */
+.artist-songs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* artist songs card */
+.artist-song-card {
+  display: flex;
+  color: #d2d2d2;
+  background-color: #3c3648;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+/* artist song card- on hover */
+.artist-song-card:hover {
+  background-color: #53495a;
+}
+
+/* artist song card - song sequence */
+.song-sequence {
+  margin: 15px 10px 0px;
+}
+
+/* artist song card - song image */
+.song-image {
+  width: 40px;
+  height: 40px;
+  box-shadow: 1px 1px 2px 3px #b0a2c7;
+}
+
+/* artist song card - song details */
+.song-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+/* artist song card - song name */
+.song-name {
+  color: white !important;
+  margin-top: 7px;
+  font-weight: bolder;
+}
+
+/* artist song card - singer name */
+.singer-name {
+  margin-top: 3px;
+}
+
+/* artist song card - song icons  */
+.song-icon {
+  margin-left: 63%;
+  margin-top: 10px;
+}
+
+/* artist song card - heart/like icon */
+.heart-icon {
+  margin-right: 25px;
+}
+
+/*  ---*****main-view ends here*****--- */
+
+/* aside - playlists starts here */
+/* similar artists section */
+#similar-artists-section {
+  width: 25%;
+  position: absolute;
+  top: 18%;
+  right: 5%;
+}
+
+/* similar artists container */
+.aside-playlist-container {
+  margin-top: 10px;
+  height: 49vh;
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari */
+.aside-playlist-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.aside-playlist-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* similar artists common card */
+.similar-artists-card {
+  display: flex;
+  color: #c7c5c7;
+  margin: 10px;
+  font-size: 11px;
+  padding: 10px;
+}
+
+/* similar artists - song image */
+.similar-artists-card .song-image {
+  width: 110px;
+  height: 90px;
+  box-shadow: 1px 1px 8px 4px #939de4;
+}
+
+/* similar artists - song details */
+.similar-artists-card .song-details {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+/* similar artists - song name */
+.similar-artists-card .song-details .similar-artist-song-name {
+  margin-bottom: 10px;
+  font-weight: bolder;
+  color: white !important;
+  font-size: 15px;
+}
+
+/* similar artists - other options */
+.other-options {
+  margin-left: 25%;
+  font-size: 13px;
+}
+
+/* similar artists - options container */
+.dots-container {
+  margin-left: 3px;
+}
+
+/* each dot style */
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: var(--common-color);
+}
+
+/* similar artists - on hover */
+.similar-artists-card:hover {
+  background-color: #29243530;
+  z-index: 9;
+}
+
+/* ---recently played song section--- */
+/* recently played section */
+#recently-played-section {
+  width: 25%;
+  position: absolute;
+  top: 82%;
+  right: 5%;
+}
+
+/* recently played section - card */
+.recently-played-card {
+  display: flex;
+  align-content: center;
+  color: #c7c5c7;
+  font-size: 10px;
+  padding: 10px;
+}
+
+/* recently played section card - on hover */
+.recently-played-card:hover {
+  background-color: #29243530;
+}
+
+/* recently played card- song sequence */
+.recently-played-song-sequence {
+  margin-top: 17px;
+}
+
+/* recently played card - song image */
+.recently-played-song-image {
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 8px 4px #939de4;
+  margin-left: 20px;
+}
+
+/* recently played card - song details */
+.recently-played-song-details {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+/* recently played card - song details - p tag 1st child */
+.recently-played-song-details p:first-child {
+  font-size: 14px;
+  color: white;
+  font-weight: bolder;
+}
+
+/* recently played card - song details - p tag last child */
+.recently-played-song-details p:last-child {
+  margin-top: 8px;
+}
+
+/* recently played card - song icons */
+.recently-played-song-icons {
+  margin-top: 9px;
+  margin-left: 33%;
+}
+
+/* aside - playlists ends here */
+
+/* footer - playbar*/
+/* music player playbar */
+#music-player-playbar {
+  position: fixed;
+  height: 85px;
+  width: 100%;
+  background-color: #090a2b;
+  top: 87%;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--common-color);
+}
+
+/* playbar song details section*/
+.playbar-song-details {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 22px;
+  font-size: 12px;
+}
+
+/* all div of  playbar-song-details section */
+.playbar-song-details div {
+  margin-right: 10px;
+}
+
+/* playbar song image */
+.playbar-song-img {
+  height: 45px;
+  width: 45px;
+}
+
+/* playbar song name and icon section  */
+.playbar-song-name,
+.playbar-song-icon {
+  margin-top: 10px;
+}
+
+/* playbar song icon */
+.playbar-song-icon i {
+  margin-right: 5px;
+  font-size: 14px !important;
+}
+
+/* playbar progressbar icons section */
+.progressbar-icon {
+  display: flex;
+  position: relative;
+  left: 20%;
+}
+
+/* playbar progressbar icons section- icons */
+.progressbar-icon i {
+  margin: 18px 15px 15px;
+}
+
+/* play/pause icon of playbar progressbar icons section */
+.progressbar-icon i:nth-child(3) {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/* song progress section */
+.progressbar-div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px !important;
+}
+
+/* song duration */
+.progressbar-div span {
+  margin-top: -5px;
+  padding: 0px 15px;
+}
+
+/* outer div of song progressbar */
+.progressbar-div .outer-div {
+  width: 425px;
+  height: 3px;
+  background-color: #56505d;
+}
+
+/* inner div of song progressbar */
+.progressbar-div .inner-div {
+  width: 125px;
+  height: 3px;
+  background-color: #2f9da0;
+}
+
+/* inner div after element */
+.progressbar-div .inner-div::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--common-color);
+  border-radius: 100%;
+  position: absolute;
+  left: 44%;
+  top: 60%;
+}
+
+/* volume controls section */
+.volume-controls {
+  display: flex;
+  margin-top: 40px;
+}
+
+/* volume cntrols section - all icons */
+.volume-controls i {
+  margin: 0 3px;
+}
+
+/* volume progress bar */
+.volume-controls-progressbar {
+  margin-right: 7px;
+}
+
+/* outer div of volume progressbar */
+.volume-controls-progressbar .outer-div {
+  width: 90px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #56505d;
+}
+
+/* inner div of volume progressbar */
+.volume-controls-progressbar .inner-div {
+  width: 45px;
+  height: 3px;
+  margin-top: 5px;
+  background-color: #15d617;
+}
+
+/* after element of inner div of volume progressbar */
+.volume-controls-progressbar .inner-div::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--common-color);
+  border-radius: 100%;
+  position: absolute;
+  left: 87%;
+  top: 49%;
+}
+
+/* main content ends here */
