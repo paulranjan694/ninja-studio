@@ -1,9 +1,9 @@
 # ninja-studio
-Frontend part of a music player
+### Frontend part of a music player
 
-# URL
-[https://paulranjan694.github.io/ninja-studio/]
+## Link to Web App
+[Check Here!!](https://paulranjan694.github.io/ninja-studio/)
 
-# Tech Stack
+## Tech Stack
 - HTML
 - CSS
